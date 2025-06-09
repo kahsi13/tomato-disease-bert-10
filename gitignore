@@ -1,0 +1,44 @@
+# 🔧 Python genel
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.log
+
+# 📦 Sanal ortamlar
+.env/
+.venv/
+venv/
+env/
+*.env
+
+# 🧪 Geçici dosyalar / notebook artıkları / sistem dosyaları
+.ipynb_checkpoints/
+.DS_Store
+*.swp
+
+# 💾 Model checkpoint ve büyük dosyalar
+model/checkpoint-*/
+*.pt
+*.bin
+*.h5
+
+# ❌ Hugging Face'e yüklendi, GitHub'da tutulmasın:
+model/model.safetensors
+model/config.json
+model/tokenizer.json
+model/tokenizer_config.json
+model/special_tokens_map.json
+model/vocab.txt
+model/label_encoder.pkl
+model/training_args.bin
+model/confusion_matrix.png
+model/classification_report.csv
+
+# 🗃️ Hugging Face cache klasörü
+~/.cache/huggingface/
+
+# 📦 Eğitim verileri
+data/
+*.csv
