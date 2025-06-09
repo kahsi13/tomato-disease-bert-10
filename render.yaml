@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tomato-bert-api
+    env: python
+    repo: https://github.com/kahsi13/tomato-disease-bert-10
+    branch: main
+    buildCommand: pip install -r scripts/requirements.txt
+    startCommand: uvicorn scripts.main:app --host 0.0.0.0 --port 10000
+    plan: free
+    envVars:
+      - key: HF_TOKEN
+        value: YOUR_HUGGINGFACE_TOKEN
